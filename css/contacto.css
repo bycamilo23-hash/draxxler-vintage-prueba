@@ -1,0 +1,146 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Cormorant Garamond',serif;
+background:#fff;
+color:#000;
+}
+
+.navbar{
+position:sticky;
+top:0;
+background:#fff;
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+align-items:center;
+padding:25px 40px;
+border-bottom:1px solid #eee;
+z-index:1000;
+}
+
+.marca{
+text-align:center;
+letter-spacing:10px;
+font-size:1.2rem;
+}
+
+.logo{
+width:50px;
+justify-self:end;
+}
+
+.menu-container{
+position:relative;
+}
+
+.menu-btn{
+background:none;
+border:none;
+font-size:32px;
+cursor:pointer;
+}
+
+.menu-dropdown{
+position:absolute;
+top:65px;
+left:0;
+width:260px;
+background:#fff;
+border:1px solid #ddd;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+display:none;
+z-index:999;
+}
+
+.menu-dropdown.activo{
+display:block;
+}
+
+.menu-dropdown a{
+display:block;
+padding:18px 22px;
+text-decoration:none;
+color:#000;
+letter-spacing:3px;
+text-transform:uppercase;
+border-bottom:1px solid #eee;
+}
+
+.contacto{
+min-height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+}
+
+.contacto h1{
+font-size:3rem;
+letter-spacing:8px;
+font-weight:300;
+margin-bottom:20px;
+}
+
+.texto{
+font-size:1.1rem;
+margin-bottom:50px;
+max-width:600px;
+}
+
+.contacto-links{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.contacto-btn{
+width:280px;
+padding:30px;
+border:1px solid #000;
+text-decoration:none;
+color:#000;
+display:flex;
+flex-direction:column;
+gap:10px;
+transition:.3s;
+}
+
+.contacto-btn:hover{
+background:#000;
+color:#fff;
+transform:translateY(-5px);
+}
+
+.contacto-btn span{
+font-size:1rem;
+letter-spacing:2px;
+}
+
+@media(max-width:768px){
+
+.navbar{
+padding:20px;
+}
+
+.marca{
+font-size:1rem;
+letter-spacing:4px;
+}
+
+.contacto h1{
+font-size:2rem;
+}
+
+.contacto-btn{
+width:100%;
+max-width:320px;
+}
+
+}

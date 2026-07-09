@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contacto | Draxxler Vintage</title>
+
+<link rel="icon" href="img/log2.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/contacto.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="menu-container">
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <div class="menu-dropdown" id="menuDropdown">
+
+            <a href="index.html">INICIO</a>
+
+            <a href="catalogo.html">CATÁLOGO</a>
+
+            <a href="contacto.html">CONTACTO</a>
+
+        </div>
+
+    </div>
+
+    <div class="marca">
+        DRAXXLER VINTAGE
+    </div>
+
+    <img src="img/log2.jpg" alt="Logo" class="logo">
+
+</header>
+
+<section class="contacto">
+
+    <h1>CONTACTO</h1>
+
+    <p class="texto">
+        Síguenos en nuestras redes y realiza tus pedidos directamente.
+    </p>
+
+    <div class="contacto-links">
+
+        <a href="https://www.instagram.com/draxx_vintage/"
+           target="_blank"
+           class="contacto-btn">
+
+            INSTAGRAM
+            <span>@draxx_vintage</span>
+
+        </a>
+
+        <a href="https://wa.me/573246603735"
+           target="_blank"
+           class="contacto-btn">
+
+            WHATSAPP
+            <span>324 660 3735</span>
+
+        </a>
+
+    </div>
+
+</section>
+
+<script>
+
+function toggleMenu(){
+
+    document
+    .getElementById("menuDropdown")
+    .classList.toggle("activo");
+
+}
+
+</script>
+
+</body>
+</html>
